@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ellembee Appliances</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(
+          44deg,
+          rgb(76, 122, 203),
+          rgb(209, 181, 121),
+          rgb(101, 147, 233)
+        );
+      }
+
+      header {
+        /* border: 5px solid red; */
+        /* background: linear-gradient(rgb(62, 109, 190),rgb(240,240,210) rgb(60, 101, 178)); */
+        font-family: Cochin;
+        color: #200313;
+        height: auto;
+        width: 40%;
+        text-align: center;
+        padding: 0, auto;
+        margin: 1px auto;
+      }
+
+      h1 {
+        background: transparent;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch; /* Stretch items to fill container height */
+        gap: 20px;
+        padding: 20px;
+        margin: 0 auto;
+      }
+
+      .appliance {
+        display: flex;
+        flex-direction: column; /* Ensure content stacks vertically */
+        flex-grow: 1; /* Allow items to grow */
+        max-width: 300px;
+        width: 100%; /* Ensure all items take full width available */
+        height: fit-content;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+      }
+
+      .appliance img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .appliance .description {
+        padding: 15px;
+        flex-grow: 1; /* Allow description to take up remaining space */
+      }
+
+      footer {
+        text-align: center;
+        padding: 1em;
+        background-color: #333;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      .index {
+        color: #121212;
+        font-size: 15px;
+        font-weight: 800px;
+        background: none;
+        text-decoration: none;
+      }
+      p,
+      li {
+        font-size: larger;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="index.html" class="index">Home</a>
+    <header>
+      <h1>Ellembee Appliances</h1>
+    </header>
+
+    <div class="container">
+      <!-- Replace these image sources and descriptions with your own -->
+      <div class="appliance">
+        <img src="" alt="Appliance 1" />
+        <h2>Bedroom 3</h2>
+        <div class="description">
+          <p>This is bedroom 3 with brand new bed also on the second level.</p>
+          <p><-----------------------------------></p>
+          <br />
+          <img
+            src="https://lh3.googleusercontent.com/pw/AP1GczM3056PV9v5USHQSWX2Sh6UjPDSMVzHEkNub5dXLxHc7nkVTNJUxKmKCwkgmUa9p-VtaGdC23in8ryCbIQ4f9g-mAAm7Eu5XDd4bVTYfJHfAY_VPlh9VZAUJsQJzQ_b634pd9-c3kW5CK_Uf040QZ7Wxg=w1746-h982-s-no-gm?authuser=0"
+            alt="Appliance" />
+          <h2>Bedroom 2</h2>
+          <p>
+            2nd Bedroom with new QS-bed and desk – has the cupboard with spare
+            sheets and towels
+          </p>
+        </div>
+      </div>
+
+      <div class="appliance">
+        <img
+          src="https://lh3.googleusercontent.com/pw/AP1GczPja43zPvo05KK7zGdCvf1CID48EKW2T8Bvx7dphnt5_9SnDoHd17sMuSdoPhUNodiGY0e6bz5e_bvlDngW5GWfLNRICkrLp7Tl16TiKfngD52OHH3kPAwCM6kAqNBUJh1O0k1nGvC4NeGEWgILaf1FXw=w552-h982-s-no-gm?authuser=0"
+          alt="Appliance 2" />
+        <div class="description">
+          <h2>Nespresso Coffee Machine</h2>
+          <p>
+            Empty the coffee pod container and drip tray when needed, fill the
+            water tank, and press Start. Insert a new coffee pod, select type,
+            and place a mug to brew. For milk drinks, add milk to the jug,
+            heat/froth it with the machine, and clean the spout after. The
+            machine turns off by itself.
+          </p>
+        </div>
+      </div>
+
+      <div class="appliance">
+        <img
+          src="https://lh3.googleusercontent.com/pw/AP1GczMaGLn1QTwrN-rP4VdlaS0CTmLRBpjkZQ5wVnKeplG5-ovu5DPk_5Pp2jygUDSi-kTsjA28K9GN2Z1y6y3YG404ktxO_z7RcCn_TlD1VsrukdYOXUvSVpX7YQHCJ8gCEJEMrd_y_FASpizWTIeaa-CMxg=w1505-h982-s-no-gm?authuser=0"
+          alt="Toaster Oven Breville" />
+        <div class="description">
+          <h2>Toaster Oven Breville</h2>
+          <p>
+            The Smart Oven™ Compact Convection Master many cooking techniques
+            in one oven. From mini and compact toaster oven designs to larger
+            countertop ovens that perfectly roast a 14lb turkey, Breville smart
+            ovens and air fryer ovens are ideal for small or large gatherings
+            with friends and family.
+          </p>
+        </div>
+      </div>
+      <!-- Add more appliances as needed -->
+      <div class="appliance">
+        <img
+          src="https://lh3.googleusercontent.com/pw/AP1GczN0rGcxOfhc1aGyJ9IjxJqOwwgTY0Dykd_Dxmfvb31DHiWuv3Hz2pr3vkBxK6En9fRFh6bKNVo088bwvTD6RuKN3-IU0k11OXCo6gXXHAYg7ac9vLYozoGYfuGfvOu9tn2wPZXzq3WNc_6D-LhiR3mefw=w728-h982-s-no-gm?authuser=0"
+          alt="Appliance 4" />
+        <div class="description">
+          <h2>Dishwasher</h2>
+          <p>Just a not so new dishwasher but it does the work</p>
+        </div>
+      </div>
+      <!-- Add more appliances as needed -->
+      <div class="appliance">
+        <img
+          src="https://lh3.googleusercontent.com/pw/AP1GczMnN9Dd6A6WHPeFtrnTZ5or8xV82GoRYYZQnYsej5apB06kufrsJv5MVZToAFVApwCJwADlAWHRw247H56JA4Y010OKn429ZTUpeoDblu90KGJQzkx_KNWkPgwopcCRcKdOIY0wc_lkmMNdCo_NmOpn8w=w1746-h982-s-no-gm?authuser=0"
+          alt="Appliance 5" />
+        <div class="description">
+          <h2>Airfryer & Orange Juice squeezer</h2>
+          <p>
+            Phillips XXL Smart Chef Airfryer.
+            <li>Smart Sensor Automatically Monitors and Adjusts Cooking</li>
+            <li>As Crispy as Deep Fried with 90% Less Fat*</li>
+            <li>Twin TurboStar Technology removes Fat from Foods</li>
+            <li>Fry</li>
+            <li>Bake</li>
+            <li>Grill and Roast your Favorite Foods at Home</li>
+            <li>XXL Family Size fits a Whole Chicken or 1.4 kg of Fries</li>
+            <li>QuickClean Basket with Non-Stick Mesh cleans up in 90 Secs</li>
+            <li>Digital Display with 5 Preset Cooking Programs</li>
+            <li>Dimensions of Inner Basket 23cm(W) 23cm(L) 9cm(H)</li>
+          </p>
+        </div>
+      </div>
+      <!-- Add more appliances as needed -->
+      <div class="appliance">
+        <img
+          src="https://lh3.googleusercontent.com/pw/AP1GczMy3_koUia_kRzpO7wey-kZOn3E6PEm9UZznSvP7jUBRmlTpbexv91kqHe_8b2Q8Myp61hNryV9L-D5a5mKzAWl0OX9tlhnZF3e6aH-qDVj2ujdhahwGd7aVmQsRnSn0ccxk-ZLfrEBgxWayzANa0PxFA=w615-h982-s-no-gm?authuser=0"
+          alt="Appliance 6" />
+        <div class="description">
+          <h2>Washing Machine</h2>
+          <p>
+            The left-hand slot is for washing liquid/powder. The middle slot is
+            for fabric softener. The right-hand slot is only used for pre-wash
+            cycles. For the controls – working from left to right – press the
+            power button on. Then press the circular button to select “Quick 30”
+            (all the others take ages). Then press the small buttons to select
+            options – I usually increase the spin-speed and temp by one place,
+            and select Rinse+. Then press the Start button (the sort-of-
+            triangle to the lower-right of the big round button. If the machine
+            does not start, press the door closed more firmly – i.e. give it a
+            shove.
+          </p>
+        </div>
+      </div>
+      <!-- Add more appliances as needed -->
+      <div class="appliance">
+        <img
+          src="https://lh3.googleusercontent.com/pw/AP1GczMoRStqbLJBzsf0IPfKMS_Kf0_8IP1GirMsWuNB6SWLUBI9hFTuRq0P76iYdSE0MF3stbyMMH8CsV1vFYNrLCQCZUyYDdkNDrDVdYa83gWuI54mxPMsVIwC7cLH64yhqexwgVyRUzu9ykqM2wN9wvUrUA=w552-h982-s-no-gm?authuser=0"
+          alt="Appliance 7" />
+        <div class="description">
+          <h2>Dyson Purifier Hot + Cool Formaldehyde</h2>
+          <p>
+            It combines a precise solid-state formaldehyde sensor with a unique
+            catalytic filter that continuously destroys formaldehyde. HEPA H13
+            and activated carbon filters also capture dust, allergens, gases5
+            and other ultrafine pollutants. And Dyson purifiers have powerful
+            Air Multiplier™ technology to purify the whole room.
+          </p>
+        </div>
+      </div>
+      <!-- Add more appliances as needed -->
+      <div class="appliance">
+        <img
+          src="https://lh3.googleusercontent.com/pw/AP1GczNgBWcQv8cCvAlhqFY0UAWm0ZKi-Wo6AS6FQVWtepZt_5EBlg7uNpg4GJInESsTlVzt5686hpqRw5Vrf4rZeF0CYEHbZKwwySh1TC-Aq5usTJX8CBh6Et_eHDf7N4sxfIzin_du8VCLP8HDi_oG8DklpA=w1746-h982-s-no-gm?authuser=0"
+          alt="Appliance 8" />
+        <div class="description">
+          <h2>Reverse-cycle air-conditioning</h2>
+          <p>
+            Reverse cycle air conditioning refers to a refrigeration cycle that
+            can provide both heating and cooling solutions. This is done by
+            reversing the refrigeration cycle so that the system can heat in
+            winter and cool in summer. The entire system is efficient,
+            adaptable, and flexible.
+          </p>
+        </div>
+      </div>
+      <!-- Add more appliances as needed -->
+      <div class="appliance">
+        <img
+          src="https://lh3.googleusercontent.com/pw/AP1GczO8EFdmGqW1qWiFelfb2RdZHe3zRf3aOhKLQOOFGtQl3zu8Lckp1XyWRMQ6zBasSFmr5wz75x13Z-YyU4qJ9P6AEMb2wohEq9-lw4ownffgDR8B12XVWi0y24fx6Wou9gIwUuvJOKA4PrfdUhmPxmiwwg=w705-h982-s-no-gm?authuser=0"
+          alt="Appliance 9" />
+        <div class="description">
+          <h2>Wood fire heater</h2>
+          <p>Firewood in the garage.</p>
+        </div>
+      </div>
+      <!-- Add more appliances as needed -->
+      <div class="appliance">
+        <img
+          src="https://lh3.googleusercontent.com/pw/AP1GczPpFsTl6I7o6yrao4he2VtQ561LSXOHIjgbh3DxgqV5S6XnGyYR1eNJKS1HSco8kqg76M1QKSMsBWQY3tlwzJ0BDbd_l66PAGSsc--cYtOFtRupsINGcSzy_tQ1PtP5MnzNHWJcoL3L8BXBWl6Kkq-eqw=w1300-h982-s-no-gm?authuser=0"
+          alt="Appliance 10" />
+        <div class="description">
+          <h2>Microwave</h2>
+          <p>
+            This is a modern version that does not have a rotating dish at the
+            bottom – located in the cupboard under the cooktop – please keep the
+            door open when operating
+          </p>
+        </div>
+      </div>
+      <!-- Add more appliances as needed -->
+      <div class="appliance">
+        <img
+          src="https://lh3.googleusercontent.com/pw/AP1GczN_efM_mQezga-bBrkkHigLkgaHJTqMnx0Gi43-G7H3Hud5NhqzZJHC6q6YmdOPvFDDBD9vI-D9VoMwmbmLLC5yTKE3fXgW-MA10WGNqyy3hj-HX5T9dgHt1KVWP4B85K5ojOlH478Da-MqboEZurD-pg=w755-h982-s-no-gm?authuser=0"
+          alt="Appliance 11" />
+        <div class="description">
+          <h2>Dryer</h2>
+          <p>Located next to the washing machine in the laundry area</p>
+        </div>
+      </div>
+      <!-- Add more appliances as needed -->
+
+      <div class="appliance">
+        <img
+          src="https://lh3.googleusercontent.com/pw/AP1GczO_YXnFoWxUDrhI9TsDIO449kbr0AyJGWATxGeKfpHfh4n88xb4J6JfPEfyxZ4W18PApWdslK_USXmw3YEmolLkKr4KhbI4zvHqRtkFjZSVxlKw5rGrNfo9fXT77q_Urh5nJGvnPa9sBPBCs15hWTPsHA=w1436-h982-s-no-gm?authuser=0"
+          alt="Appliance 13" />
+        <div class="description">
+          <h2>Television & Video</h2>
+          <p>
+            TVs in the living-room and main bedroom. No free-to-air stations
+            except via streaming on the Apple-TV (e.g. ABC iView). The Apple TVs
+            also have an app called Plex on them – with access to 1000’s of TV
+            series and movies. See instructions below.
+          </p>
+        </div>
+      </div>
+      <!-- Add more appliances as needed -->
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Appliance Showcase</p>
+    </footer>
+
+    <script>
+      // Add any JavaScript functionality here if needed
+    </script>
+  </body>
+</html>

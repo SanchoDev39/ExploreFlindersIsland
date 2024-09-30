@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styleTrousers.css"> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script&family=Dosis:wght@500&family=Pacifico&family=Updock&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@700&display=swap");
+      @font-face {
+        font-family: "RubikVinyl";
+        src: url("/RubikVinyl-Regular.ttf") format("truetype");
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: rgb(7, 7, 7);
+        color: rgb(187, 158, 158);
+      }
+      #home {
+        font-size: 1em;
+      }
+
+      a {
+        color: rgb(56, 173, 250);
+        text-shadow: 3px 5px 10px rgb(247, 65, 9);
+        position: absolute;
+        font-family: Cinzel;
+        font-size: 1.3rem;
+        text-decoration: none;
+        top: 0;
+        left: 0;
+      }
+
+      h1 {
+        width: 90%;
+        max-width: 150%;
+        min-width: 50%;
+        text-align: center;
+        margin: 0px, auto;
+        font-size: 250%;
+        color: rgb(56, 173, 250);
+        text-shadow: 2px 5px 20px rgb(7, 181, 211);
+        font-family: Cinzel;
+      }
+
+      
+      button {
+        display: inline-block;
+        margin-inline: auto;
+        border: none;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 2em;
+        color: rgb(56, 173, 250);
+        background: transparent;
+        font-family: Cinzel;
+      }
+
+      #photoImage {
+        margin-inline: auto;
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        max-height: 90%;
+        box-shadow: 0px 0px 95px rgb(56, 173, 250);
+        object-fit: cover;
+        margin-bottom: 100px;
+        border-radius: 5px;
+        /* viewport-fit: cover; */
+      }
+
+      /* .active {
+        opacity: 1;
+      }  */
+
+      @keyframes rotateMoon {
+        from {
+          transform: translate(0, 0) rotate(0deg);
+        }
+        to {
+          transform: translate(0, 0) rotate(180deg);
+        }
+      }
+      .footer {
+        position: absolute;
+        bottom: 00rem;
+      }
+
+      /* Media Query for Mobile Devices*/
+    </style>
+  </head>
+  <body>
+    <a id="home" href="index.html"> Home </a>
+    <h1>Welcome To Fliders Island Gallery</h1>
+
+    <div class="slide">
+      
+      <img
+        id="photoImage"
+        src="https://lh3.googleusercontent.com/pw/AP1GczODdA2B00ULidrlNGRizpNWS924Wx3qGYNF9yaqWEc8wZ_8rHP_Lc8bqM-aXdUqe_eDFUN1-kM1SwHa0bwin_liMMk7BdLkpIdLlp5w0qfVGFfBte4WyyzvsFoKPWq30_UhSTjEAivPOZVXWTispR_Eqw=w1600-h1073-s-no-gm?authuser=0"
+      />
+    </div>
+    <div class="buttons">
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
+    </div>
+    <div class="footer">
+      <footer>
+        &copy;
+        <span id="year">2024</span>
+        <span>Jorge Rueda Photography. All rights reserved</span>
+      </footer>
+    </div>
+    <script src="flinders-V.3.js"></script>
+  </body>
+</html>

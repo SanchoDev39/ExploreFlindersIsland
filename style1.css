@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --var-lightBlue: #6bd5e1;
+  --color-lightYellow: #ffd98e;
+  --color-lightBrown: #ffb677; /* Fixed incorrect value */
+  --color-lightOrange: #ff8364;
+}
+
+body {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(40deg, #080708, #3772ff, #196c76);
+}
+.container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: [outer-start] 1fr [center-start] 1fr [center-end] 1fr [ outer-end];
+  grid-template-rows: 100px 100px 100px;
+  border: 1px solid black;
+}
+.box1 {
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+  background-color: #e77e42;
+}
+.box2 {
+  grid-column: center-start / center-end;
+  background-color: aqua;
+}
+.box3 {
+  grid-column: outer-start / outer-end;
+  background-color: brown;
+}
+.box4 {
+  grid-column: center-end / outer-end;
+}
+.box4 {
+  grid-column: center-start / outer-end;
+}
+
+.grid-container {
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  margin: 1px auto;
+  color: #0d3e57;
+  text-shadow: 0 0 5px orangered;
+  font-size: 4em;
+}
+
+#step1,
+#step2,
+#step3,
+#step5,
+#step6,
+#step7,
+#step8,
+#step9,
+#step10,
+#step11,
+#step12,
+#step13,
+#step14,
+#step15 {
+  display: none;
+}
+
+#step1.live,
+#step2.live,
+#step3.live,
+#step5.live,
+#step6.live,
+#step7.live,
+#step8.live,
+#step9.live,
+#step10.live,
+#step11.live,
+#step12.live,
+#step13.live,
+#step14.live,
+#step15.live {
+  display: inline;
+  width: 100vw;
+  margin-inline: auto;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+#step4 {
+  color: orange;
+  font-family: Times, serif;
+  background-color: #f3ccc2;
+}
+
+ul {
+  list-style: none;
+}
+
+.fotos {
+  min-width: 50px;
+  max-width: 450px;
+  min-height: 45px;
+  max-height: 600px;
+  margin: 10px;
+}
+
+.fotos:hover {
+  box-shadow: 0 0 15px rgb(250, 250, 251);
+  transform: scale(1.5);
+  transition: all 2.5s ease;
+  z-index: 10;
+}
+
+#free-button {
+  background-color: rgb(0, 255, 55);
+  width: auto;
+  height: auto;
+}
+
+.grid-item-4 {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.tabs {
+  background: transparent;
+  grid-template-rows: auto 1fr;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1px;
+  margin-inline: auto;
+  box-shadow: 0 0 4px orangered;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  box-shadow: none;
+  font-family: playfair;
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex: 1;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  border: none;
+  box-shadow: 0 0 10px rgb(54, 159, 216);
+}
+
+.button:hover:not(.live) {
+  background: #f9a95e;
+  color: #0f0f0f;
+  text-shadow: 1.5px 1.5px 2px rgb(37, 36, 26);
+}
+
+.tabs-content {
+  padding: 2rem 1.5rem;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.content {
+  display: none;
+}
+
+.button.live {
+  background: #e77e42;
+}
+
+.content.live {
+  display: block;
+  background: transparent;
+}
+
+#sun {
+  font-size: 60px;
+}
+
+#free-button {
+  background: transparent;
+  border: none;
+  width: 500px;
+  box-shadow: none;
+  color: rgb(30, 30, 29);
+  font-family:
+    Rubik Vinyl,
+    Cochin,
+    sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.trouser {
+  margin-bottom: 300px;
+  text-decoration: none;
+}
+
+#camera {
+  font-size: 25px;
+}
+
+#motivationContainer {
+  margin: 1px auto;
+  background: transparent;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.fotosBottomPage {
+  background-color: #090909;
+  padding: 0.5%;
+  box-shadow: 0 0 30px rgb(250, 250, 250);
+}
+
+#photoButton {
+  background-color: transparent;
+  color: #4530b8;
+  font-family:
+    Rubik Vinyl,
+    Cochin,
+    sans-serif;
+  font-size: 200%;
+  border: none;
+  width: 80%;
+}
+
+#phrase {
+  font-size: 10px;
+}
+
+.motiv {
+  font-family:
+    Rubik Vinyl,
+    Cochin,
+    sans-serif;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+#photoImage {
+  width: 60%;
+  padding: 0;
+  box-shadow: 0 0 2% whitesmoke;
+}
+
+#leave_a_comment {
+  font-family: Royal brand;
+  font-size: 3rem;
+  text-shadow: 0.6px 0.6px 5px orangered;
+}
+
+#comment {
+  font-size: 6rem;
+  height: 10px;
+}
+
+#comment:hover {
+  font-size: 6.6rem;
+  transition: all 0.2s;
+}
+
+#disp_comments {
+  border: none;
+  background: transparent;
+  font-family: Royal brand;
+  font-size: 2em;
+}
+
+.btn-container-foot {
+  width: 100vw;
+  margin-inline: auto;
+}
+
+label {
+  font-family: Royal brand;
+}
+
+@media (max-width: 468px) {
+  body {
+    background: linear-gradient(40deg, #16717b, #ffb677, #196c76);
+    text-align: center;
+    font-size: 0.9em; /* Reduce font size for better readability */
+  }
+
+  .grid-container {
+    gap: 15px; /* Reduce gap between elements */
+  }
+
+  #step1.live,
+  #step2.live,
+  #step3.live,
+  #step5.live,
+  #step6.live,
+  #step7.live,
+  #step8.live,
+  #step9.live,
+  #step10.live,
+  #step11.live,
+  #step12.live,
+  #step13.live,
+  #step14.live,
+  #step15.live {
+    width: 90%; /* Increase width to utilize more screen space */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Reduce font size for headers */
+  }
+
+  .fotos {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .btn-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 5px; /* Reduce gap between buttons */
+  }
+
+  .button {
+    font-size: 1.2rem; /* Adjust button font size */
+    padding: 10px; /* Add padding for touch targets */
+  }
+
+  #free-button {
+    width: 100%; /* Make button full width */
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  #photoButton {
+    width: 100%; /* Adjust width for smaller screens */
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  #leave_a_comment {
+    font-size: 2rem; /* Reduce font size */
+  }
+
+  #comment {
+    font-size: 3rem; /* Adjust font size */
+  }
+
+  #disp_comments {
+    font-size: 1.5em; /* Adjust font size */
+  }
+
+  .tabs-content {
+    padding: 1rem; /* Reduce padding */
+  }
+
+  #phrase {
+    font-size: 8px; /* Adjust font size */
+  }
+
+  .motiv {
+    font-size: 15px; /* Adjust font size */
+  }
+
+  #photoImage {
+    width: 80%; /* Adjust image width */
+  }
+
+  nav {
+    flex-direction: column; /* Stack navigation items */
+  }
+
+  .fotosBottomPage {
+    padding: 1%; /* Adjust padding */
+  }
+}
