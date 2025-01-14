@@ -57,18 +57,18 @@ function displayRandomImage() {
   return linksArray[randomIndex];
 }
 
-const photoImage = document.getElementById("photoImage");
-photoImage.style.objectFit = "cover";
-photoImage.style.objectPosition = "center";
-let currentSlide = 0;
-function showSlide() {
-  if (photoImage) {
-    photoImage.src = linksArray[currentSlide];
-    currentSlide = (currentSlide + 1) % linksArray.length;
-  }
-}
+// const photoImage = document.getElementById("photoImage");
+// photoImage.style.objectFit = "cover";
+// photoImage.style.objectPosition = "center";
+// let currentSlide = 0;
+// function showSlide() {
+//   if (photoImage) {
+//     photoImage.src = linksArray[currentSlide];
+//     currentSlide = (currentSlide + 1) % linksArray.length;
+//   }
+// }
 
-setInterval(showSlide, 6000); // Change slide every 3 seconds
+// setInterval(showSlide, 6000); // Change slide every 3 seconds
 
 function fetchUsers() {
   var xhr = new XMLHttpRequest();

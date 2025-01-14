@@ -4,12 +4,14 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header('Content-Type: text/html; charset=UTF-8');
+    // Include the configuration file
+$config = include('config.php');
 
-// Database configuration
-$servname = "localhost";
-$username = "root";
-$password = "";
-$database = "jorgedb";
+// Use configuration variables
+$servername = $config['db_host'];
+$username = $config['db_user'];
+$password = $config['db_pass'];
+$dbname = $config['db_name'];
 
 // Create connection
 $conn = new mysqli($servname, $username, $password, $database);
